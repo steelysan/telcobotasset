@@ -49,6 +49,7 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
+  //https library is being imported into the project accessed as global.get ('https')
     functionGlobalContext: {
         https:require('https')
     },
